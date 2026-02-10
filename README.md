@@ -31,3 +31,14 @@
 | Author      |VARCHAR(200)|
 | Category    |VARCHAR(100)|
 | Status      |ENUM('AVAILABLE','BORROWED')|
+
+#### Borrowing
+| Column        | Data type |
+| :---          |    ---:   |
+| BorrowID      | INT AUTO INCREMENT PRIMARY KEY|
+| UserID       | INT  |
+| BookID       | INT  |
+| ReturnBefore | DATE |
+| BorrowedDate | DATE |
+| ReturnedDate | DATE |
+| Status       |ENUM('BORROWED','RETURNED',’OVERDUE’)|
