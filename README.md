@@ -1,5 +1,7 @@
 # php-library-project
 
+https://docs.google.com/document/d/1LJBu3vfhFGO4z_2YRNpr5wvaOKGbsr5roeF04d_vnAY/edit?tab=t.0
+
 ## ชื่อโปรเจค เว็บยืม-คืนหนังสือห้องสมุด
 
 ### สมาชิกในกลุ่ม<br>
