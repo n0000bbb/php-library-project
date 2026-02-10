@@ -16,9 +16,9 @@
 | Column      | Data type |
 | :---        |    ---:   |
 | UserID      | INT AUTO INCREMENT PRIMARY KEY|
-| Paragraph   |VARCHAR(100)|
-| UserID      | Title       |
-| Paragraph   | Text        |
-| UserID      | Title       |
-| Paragraph   | Text        |
-| Paragraph   | Text        |
+| Username    |VARCHAR(100)|
+| Password    |VARCHAR(255)|
+| FullName    |VARCHAR(200)|
+| Email       |VARCHAR(100)|
+| Phone       |VARCHAR(10) |
+| Role        |  BOOLEAN   |
