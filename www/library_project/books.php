@@ -2,7 +2,7 @@
 <html lang="th">
 <head>
     <meta charset="UTF-8">
-    <title>Books</title>
+    <title>หนังสือ - Library of Sakolraj</title>
 
     <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -24,7 +24,7 @@
 
         <!-- Sidebar -->
         <nav class="col-md-2 bg-dark sidebar text-white p-3">
-            <h5 class="text-center mb-4">📚 Library</h5>
+            <h5 class="text-center mb-4">📚 Library of Sakolraj</h5>
 
             <ul class="nav nav-pills flex-column gap-1">
                 <li class="nav-item">
@@ -37,7 +37,7 @@
                     <a href="books.php" class="nav-link text-white active">หนังสือ</a>
                 </li>
                 <li class="nav-item">
-                    <a href="borrowing.php" class="nav-link text-white">รายการยืม</a>
+                    <a href="borrowing.php" class="nav-link text-white">การยืม</a>
                 </li>
             </ul>
 
@@ -51,11 +51,12 @@
             <!-- Page Header -->
             <div class="d-flex justify-content-between align-items-center mb-3">
                 <div>
-                    <h3>Books</h3>
+                    <h3>หนังสือ</h3>
                     <p class="text-muted mb-0">จัดการข้อมูลหนังสือในห้องสมุด</p>
                 </div>
-                <button class="btn btn-success">➕ เพิ่มหนังสือ</button>
             </div>
+
+            <a href="addBooks.php" class="btn btn-success mb-3">+ เพิ่มหนังสือ</a>
 
             <!-- Table -->
             <div class="card shadow-sm">
@@ -73,12 +74,12 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="text-center">1</td>
+                                <td class="text-center">Ex.</td>
                                 <td>PHP & MySQL เบื้องต้น</td>
                                 <td>สมชาย ใจดี</td>
                                 <td>Programming</td>
                                 <td class="text-center">
-                                    <span class="badge bg-success">AVAILABLE</span>
+                                    <span class="badge bg-success">ว่าง</span>
                                 </td>
                                 <td class="text-center">
                                     <button class="btn btn-warning btn-sm">แก้ไข</button>
@@ -87,15 +88,16 @@
                             </tr>
 
                             <tr>
-                                <td class="text-center">2</td>
+                                <td class="text-center">Ex.</td>
                                 <td>Database Design</td>
                                 <td>John Smith</td>
                                 <td>Database</td>
                                 <td class="text-center">
-                                    <span class="badge bg-danger">BORROWED</span>
+                                    <span class="badge bg-danger">ถูกยืม</span>
                                 </td>
                                 <td class="text-center">
-                                    <button class="btn btn-secondary btn-sm" disabled>ไม่ว่าง</button>
+                                    <button class="btn btn-warning btn-sm">แก้ไข</button>
+                                    <button class="btn btn-danger btn-sm">ลบ</button>
                                 </td>
                             </tr>
                         </tbody>
@@ -107,6 +109,10 @@
 
     </div>
 </div>
+
+<!-- SweetAlert2 -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="scripts.js"></script>
 
 </body>
 </html>

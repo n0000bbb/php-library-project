@@ -2,7 +2,7 @@
 <html lang="th">
 <head>
 <meta charset="UTF-8">
-<title>Dashboard</title>
+<title>หน้าหลัก - Library of Sakolraj</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <style>
@@ -22,7 +22,7 @@
 
 <!-- Sidebar -->
 <nav class="col-md-2 bg-dark sidebar text-white p-3">
-            <h5 class="text-center mb-4">📚 Library</h5>
+            <h5 class="text-center mb-4">📚 Library of Sakolraj</h5>
 
             <ul class="nav nav-pills flex-column gap-1">
                 <li class="nav-item">
@@ -35,7 +35,7 @@
                     <a href="books.php" class="nav-link text-white">หนังสือ</a>
                 </li>
                 <li class="nav-item">
-                    <a href="borrowing.php" class="nav-link text-white">รายการยืม</a>
+                    <a href="borrowing.php" class="nav-link text-white">การยืม</a>
                 </li>
             </ul>
 
@@ -53,8 +53,8 @@
         <div class="col-md-4">
             <div class="card shadow-sm text-center">
                 <div class="card-body">
-                    <h5>👥 Users</h5>
-                    <p>จัดการผู้ใช้งาน</p>
+                    <h5>👥 ผู้ใช้</h5>
+                    <p>ข้อมูลผู้ใช้งาน</p>
                 </div>
             </div>
         </div>
@@ -62,7 +62,7 @@
         <div class="col-md-4">
             <div class="card shadow-sm text-center">
                 <div class="card-body">
-                    <h5>📚 Books</h5>
+                    <h5>📚 หนังสือ</h5>
                     <p>รายการหนังสือ</p>
                 </div>
             </div>
@@ -71,7 +71,7 @@
         <div class="col-md-4">
             <div class="card shadow-sm text-center">
                 <div class="card-body">
-                    <h5>📖 Borrowing</h5>
+                    <h5>📖 รายการยืม</h5>
                     <p>ประวัติการยืม–คืน</p>
                 </div>
             </div>
@@ -81,6 +81,10 @@
 
 </div>
 </div>
+
+<!-- SweetAlert2 -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="scripts.js"></script>
 
 </body>
 </html>
