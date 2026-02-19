@@ -15,30 +15,32 @@
 #### Users
 | Column       | Data type                           |
 | :---         |    ---:                             |
-| UserID       | INT AUTO INCREMENT PRIMARY KEY      |
+| UserID       | INT(11) AUTO INCREMENT              |
 | Username     | VARCHAR(100)                        |
 | Password     | VARCHAR(255)                        |
 | FullName     | VARCHAR(200)                        |
 | Email        | VARCHAR(100)                        |
-| Phone        | VARCHAR(10)                         |
-| Role         | BOOLEAN                             |
+| Phone        | VARCHAR(20)                         |
+| Role         | TINYINT(1)                          |
 
 #### Books
 | Column       | Data type                           |
 | :---         |    ---:                             |
-| BookID       | INT AUTO INCREMENT PRIMARY KEY      |
+| BookID       | INT(11) AUTO INCREMENT              |
 | BookName     | VARCHAR(200)                        |
 | Author       | VARCHAR(200)                        |
-| Category     | VARCHAR(100)                        |
-| Status       | ENUM('AVAILABLE','BORROWED')        |
+| Category     | VARCHAR(200)                        |
+| StatusID     | TINYINT(1)                          |
 
 #### Borrowing
 | Column       | Data type                           |
 | :---         |                    ---:             |
-| BorrowID     | INT AUTO INCREMENT PRIMARY KEY   |
-| UserID       | INT                                 |
-| BookID       | INT                                 |
+| BorrowID     | INT(11) AUTO INCREMENT              |
+| UserID       | INT(11) NULL                        |
+| BookID       | INT(11) NULL                        |
+| FullName     | VARCHAR(200) NULL                   |
+| BookName     | VARCHAR(200) NULL                   |
 | ReturnBefore | DATE                                |
 | BorrowedDate | DATE                                |
-| ReturnedDate | DATE                                |
-| Status       |ENUM('BORROWED','RETURNED',’OVERDUE’)|
+| ReturnedDate | DATE NULL                           |
+| StatusID     | TINYINT(1)                          |
